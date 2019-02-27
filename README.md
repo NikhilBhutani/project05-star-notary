@@ -1,5 +1,14 @@
 # Decentralized Star Notary
 
+This is the fifth project of the Udacity Blockchain Nanodegree. It is a decenteralized smart contract app that provides a web front end to create and lookup stars. 
+The DAPP implements the ERC-721 non-fungible token interface from openzeppelin and is deployed to the public Rinkeby Ethereum test network at the contract address:  
+https://rinkeby.etherscan.io/address/0xF3739199d8Ce705245c6e8464094803b96cb096E
+
+1. ERC-721 Token Name: Star Token
+2. ERC-721 Token Symbol: STC
+3. Versions: Truffle v5.0.4 and OpenZeppelin 2.1.2
+
+
 ## Smart Contract Functions
 
 The smart contract tokens have a name and a symbol in the StarNotary.sol file in the contracts folder.
