@@ -93,8 +93,8 @@ it('lets 2 users exchange stars', async() => {
     let user1 = accounts[1];
     let user2 = accounts[2];
     // 1. create 2 Stars with different tokenId
-    let starId1 = 1;
-    let starId2 = 2;
+    let starId1 = 7;
+    let starId2 = 8;
     await instance.createStar('awesome star 1', starId1, {from: user1});
     await instance.createStar('awesome star 2', starId2, {from: user2});
     // 2. Call the exchangeStars functions implemented in the Smart Contract
@@ -109,7 +109,7 @@ it('lets a user transfer a star', async() => {
     let user1 = accounts[1];
     let user2 = accounts[2];
     // 1. create a Star with different tokenId
-    let starId = 1;
+    let starId = 9;
     await instance.createStar('awesome star', starId, {from: user1});
     // 2. use the transferStar function implemented in the Smart Contract
     await instance.transferStar(user2, starId, {from: user1});
@@ -121,7 +121,7 @@ it('lookUptokenIdToStarInfo test', async() => {
     let instance = await StarNotary.deployed();
     let user1 = accounts[1];
     // 1. create a Star with different tokenId
-    let starId = 1;
+    let starId = 10;
     await instance.createStar('awesome star', starId, {from: user1});
     // 2. Call your method lookUptokenIdToStarInfo
     let starName = await instance.lookUptokenIdToStarInfo.call(starId);
